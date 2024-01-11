@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(immagini/sfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    background-position: center bottom;
+    min-height:100vh ;
+    position: relative;
+    
+}
+
+.testo{
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif; 
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap; 
+    color: wheat;
+}
+
+
+.blur{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 20%;
+    min-height: 15%;
+    transition: ease-out 0.5s;
+}
+
+.blur:hover{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 20%;
+    min-height: 15%;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
